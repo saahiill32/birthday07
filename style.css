@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Wallington-Regular';
+  src: url('fonts/Wallington-Regular.ttf') format('truetype');
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body, html {
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  font-family: 'Wallington-Regular', sans-serif;
+  background: black;
+}
+
+#slideshow {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+#centerContent {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  color:white;
+}
+
+#timerText {
+  font-size:2em;
+  margin-bottom:20px;
+}
+
+#countdown {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.timeBox {
+  background-color: #E2725B; /* fiery terracotta */
+  padding:15px 20px;
+  border-radius:10px;
+}
+
+.timeBox div {
+  font-size:2em;
+  color:black;
+}
+
+.label {
+  font-size:0.7em;
+  color:white;
+  margin-top:3px;
+}
+
+#postTimerMessage, #loveMessage {
+  display:none;
+  color: peach;
+  text-align:center;
+}
+
+#mainMessage {
+  font-size:3em;
+  margin-bottom:10px;
+}
+
+#subMessages div {
+  font-size:1.5em;
+  margin:5px 0;
+}
+
+#loveMessage {
+  font-size:2em;
+  margin-top:10px;
+}
+
+#balloons {
+  position:absolute;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:hidden;
+}
